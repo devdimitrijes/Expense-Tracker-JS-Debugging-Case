@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Expense Tracker</h1>
+
+    <div>
+      <h2>Add expense</h2>
+
+      <input type="text" id="name" placeholder="Expense name" required />
+      <input type="text" id="amount" placeholder="Amount" required />
+      <select id="category">
+        <option value="">Select category</option>
+
+        <option value="food">Food</option>
+        <option value="transport">Transport</option>
+        <option value="housing">Housing</option>
+        <option value="utilities">Utilities</option>
+
+        <option value="shopping">Shopping</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="subscriptions">Subscriptions</option>
+        <option value="health">Health</option>
+
+        <option value="education">Education</option>
+        <option value="training">Training</option>
+
+        <option value="pets">Pets</option>
+        <option value="other">Other</option>
+      </select>
+      <button id="addBtn">Add Expense</button>
+    </div>
+
+    <p class="errorMessage"></p>
+
+    <h2 class="expensesTitle">Expenses</h2>
+    <ul id="list"></ul>
+
+    <h2>Total: <span id="total">0</span></h2>
+
+    <div>
+      <h2>Search expenses</h2>
+
+      <input type="text" id="searchName" placeholder="Search by name" />
+
+      <input type="number" id="minAmount" placeholder="Min amount" />
+      <input type="number" id="maxAmount" placeholder="Max amount" />
+
+      <select id="filterCategory">
+        <option value="">All categories</option>
+
+        <option value="food">Food</option>
+        <option value="transport">Transport</option>
+        <option value="housing">Housing</option>
+        <option value="utilities">Utilities</option>
+
+        <option value="shopping">Shopping</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="subscriptions">Subscriptions</option>
+        <option value="health">Health</option>
+
+        <option value="education">Education</option>
+        <option value="training">Training</option>
+
+        <option value="pets">Pets</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="sortOption">Sort filters:</label>
+      <select id="sortOption">
+        <option value="">No sorting</option>
+        <option value="amount-asc">Amount (low → high)</option>
+        <option value="amount-desc">Amount (high → low)</option>
+        <option value="name-asc">Name (A → Z)</option>
+        <option value="name-desc">Name (Z → A)</option>
+      </select>
+    </div>
+
+    <footer>
+      <p id="footerText">devdimitrijes|©|2026</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
