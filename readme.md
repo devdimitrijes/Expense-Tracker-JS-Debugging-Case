@@ -116,7 +116,7 @@ This project is not just a "beginner app", but a **debugging and refactoring exe
 
 ## 📎 Live Demo / Preview
 
-*(optional – add GitHub Pages link here)*
+https://devdimitrijes.github.io/Expense-Tracker-JS-Debugging-Case/
 
 ---
 
